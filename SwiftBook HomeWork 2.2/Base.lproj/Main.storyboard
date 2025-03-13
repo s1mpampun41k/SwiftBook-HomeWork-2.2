@@ -45,8 +45,11 @@
                                     <constraint firstAttribute="width" constant="200" id="mLf-4B-CmZ"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="changeTrafficState" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGC-kM-lIQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,6 +62,12 @@
                             <constraint firstItem="J1m-w2-WdF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xKd-VN-ci0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ChangeTrafficLightStatusButton" destination="J1m-w2-WdF" id="kTK-24-DH2"/>
+                        <outlet property="greenTrafficLightView" destination="UQn-cH-GUt" id="At1-7f-FSm"/>
+                        <outlet property="redTrafficLightView" destination="FuC-5g-Krc" id="1uw-If-wOU"/>
+                        <outlet property="yellowTrafficLightView" destination="pVZ-Jg-rf3" id="oh3-CI-swh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
